@@ -72,10 +72,7 @@ function espresso_certificate_launch($attendee_id=0, $registration_id=0){
     } else {
         $data->event->venue_name = !empty($data->event->venue_title)?$data->event->venue_title:'';
     }
-	
-	//Create the Gravatar image
-	$data->gravatar = espresso_get_gravatar($data->attendee->email, $size = '100', $default = 'http://www.gravatar.com/avatar/' );
-	
+		
 	//Create the logo
 	$data->event->certificate_logo_url = empty($data->event->certificate_logo_url) ? $org_options['default_logo_url']: $data->event->certificate_logo_url;
 	$image_size = getimagesize($data->event->certificate_logo_url);
