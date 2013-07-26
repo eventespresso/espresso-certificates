@@ -1,0 +1,109 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style>
+.outside {
+	width:100%;
+	margin:0 auto;
+}
+.top_instructions {
+	background-color:#333;
+	text-align:center;
+	color:#FFF;
+	width: 98%;
+	border: 1px solid black;
+	margin:10px auto;
+	padding: 10px;
+}
+.certificate {
+	border: 4px double black;
+	width: 700px;
+	margin:10px auto;
+	padding:20px 10px;
+}
+.top_title {
+	font-weight:bold;
+	font-size: 36px;
+	margin:0 auto;
+	padding:0;
+	text-align:center;
+}
+.top_text {
+	margin:1em auto;
+	padding:0;
+	text-align:center;
+	width: 450px;
+}
+.title {
+	font-weight: bold;
+	margin:0;
+	padding:5px 10px;
+}
+.title span{
+	font-weight: normal;
+}
+span.column{
+	font-weight: bold;
+	margin:0;
+	padding:0 0 0 40px;
+}
+.logo {
+	text-align:center;
+	margin:0 auto 50px auto;
+	clear:both;
+}
+.extra_info {
+	width: 700px;
+	padding: 10px;
+	margin:0 auto;
+}
+
+.divider {
+	border-bottom:dashed #333 1px;
+	width:100%;
+	height:1px;
+	margin:10px auto;
+}
+.divider.solid {
+	border-bottom:solid #333 1px;
+	width:50%;
+	margin:0 0 0 10px;
+}
+.footer {
+	display:none;
+	font-size:11px;
+	margin:0 auto;
+}
+</style>
+</head>
+
+<body>
+<div class="outside">
+  <div class="top_instructions">Print and keep this certificate for your records</div>
+  <div class="certificate">
+  	<!--<div class="logo">[certificate_logo_image]</div>-->
+    <p class="top_title">Certificate of Completion</p>
+    <p class="top_text">This certifies that the individual named has successfully completed the course requiremnt for:</p>
+    <p class="title">Student Name: <span class="student_name">[fname] [lname]</span></p>
+    <p class="title">S.S. Number or License Number: <span>[answer_S.S. Number or License Number]</span></p>
+    <p class="title">Course Name: <span class="event_name">[event_name]</span></p>
+    <p class="title">Date of Course: <span class="course_date">[start_date]</span></p>
+    <p class="title">Provider Name: <span>[provider_name]</span></p>
+    <p class="title">Provider Number: <span>[provider_number]</span> <span class="title column">Number of Credits: <span>[number_credits]</span></span></p>
+    <p class="title">Address: <span>[venue_address] [venue_city], [venue_state] [venue_zip]</span></p>
+    <p class="title">Phone Number: <span>[provider_phone]</span></p>
+    <p class="title">Signature of Authorized Provider Official:</p>
+    <p class="title signature"><img src="http://upload.wikimedia.org/wikipedia/commons/d/d5/JohnHancocksSignature.svg" alt="signature" width="293" height="62" /></p>
+    <div class="divider solid"></div>
+    <p class="title">Title: <span>President</span> <span class="title column">Date: <span>[registration_date]</span></span></p>
+  </div>
+  <div class="extra_info">
+    <div class="divider"></div>
+    <p><strong>Certificate Instructions:</strong><br>
+      [certificate_content]</p>
+  </div>
+  <div class="footer">Powered by the Event Espresso Certificateing System for WordPress</div>
+</div>
+</body>
+</html>

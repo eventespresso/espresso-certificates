@@ -1,0 +1,17 @@
+/**
+* Event Espresso dashboard ticketing administration styles 
+*
+*/
+
+/*___ Certificate Templates ___*/
+
+#certificate-logo-image .old img {
+	opacity: 0.4;
+	width: 250px;
+	height: auto;
+}
+
+textarea#certificate_content {
+	width: 100%;
+	border-color: #dfdfdf;
+}
