@@ -36,7 +36,7 @@ function espresso_certificate_launch($attendee_id=0, $registration_id=0){
     $sql .= " FROM " . EVENTS_DETAIL_TABLE . " ed ";
     isset($org_options['use_venue_manager']) && $org_options['use_venue_manager'] == 'Y' ? $sql .= " LEFT JOIN " . EVENTS_VENUE_REL_TABLE . " r ON r.event_id = ed.id LEFT JOIN " . EVENTS_VENUE_TABLE . " v ON v.id = r.venue_id " : '';
     $sql .= " JOIN " . EVENTS_ATTENDEE_TABLE . " ea ON ea.event_id=ed.id ";
-	$sql .= " LEFT JOIN " . EVENTS_CERTIFICATE_TEMPLATES . " ec ON ec.id=ed.certificate_id ";
+	$sql .= " LEFT JOIN " . EVENTS_CERTIFICATE_TEMPLATES . " ec ON ec.id=ed.id ";
     $sql .= " WHERE ea.id = '" . $attendee_id . "' AND ea.registration_id = '" . $registration_id . "' ";
 	//echo $sql;
     $data->event = $wpdb->get_row($sql, OBJECT);
