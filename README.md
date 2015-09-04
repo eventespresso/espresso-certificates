@@ -1,6 +1,8 @@
 espresso-certificates
 =====================
 
+> Note this add-on is only compatible with EE3 and is not compatible with EE4+
+
 Installs just like any other WordPress plugin.
 
 Add the email shortcode [certificate_link] to your custom emails in the Event Espresso > General Settings  page OR when using Email Confirmation area when creating a new event or editing an existing event.
